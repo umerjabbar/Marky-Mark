@@ -44,8 +44,8 @@ open class RemoteImageView: UIImageView {
             DispatchQueue.main.async(execute: {
                 if let data = data, let image = UIImage(data: data) {
                     self.image = image
-
                     self.addAspectConstraint()
+                    NotificationCenter.default.post(name: NSNotification.Name.init("RemoteImageSizeUpdated"), object: nil)
                 }
             })
         }
