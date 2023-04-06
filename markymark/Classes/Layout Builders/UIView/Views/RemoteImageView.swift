@@ -22,7 +22,8 @@ open class RemoteImageView: UIImageView {
         super.init(frame: CGRect.zero)
 
         contentMode = .scaleAspectFit
-
+        layer.cornerRadius = 6
+        clipsToBounds = true
         if let image = UIImage(named: file) {
             self.image = image
             self.addAspectConstraint()
