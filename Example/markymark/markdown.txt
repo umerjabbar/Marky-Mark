@@ -1,84 +1,13 @@
-# Paragraphs
-Lorem ipsum *dolor* sit amet, __consectetur__ adipiscing elit. Proin ***aliquet vulputate*** diam. Emoji 🤘. Duis sodales ~~sapien~~ quis ***elementum* posuere**. Duis quam lectus, posueresed  [~~pellentesqueaauctor~~](https://m2mobi.com) eu [Velit](https://m2mobi.com). Also <https://www.m2mobi.com> and <https://www.google.com> but not <Google>.
 
-# Headers
----
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
+*   asdsadsadasdasdasdasdsa
+*   a
+*   sds
+*   ad
 
-# Lists
----
-## Ordered list
-1. Number 1
-2. Number 2
-3. Number 3
-4. Number 4
-  1. Nested 1
-  2. Nested 2
-5. Number 5
----
-## Alphabetic list
-a. Number 1
-b. Number 2
-  1. Nested 1
-  2. Nested 2
-c. Number 3
----
-## Unordered list
-- Item 1
-- Item 2
-- Item 3
-  - Nested item 1
-  - ~~Nested item 2~~
-    - Subnested it'em 1
-    - Subnested it'em 2
-    - Subsubnest'ed item 1
-    - Subsubnest'ed item 2 [Velit](https://m2mobi.com)
-    - Subsubnes'ted item 3 *(with single **space**)*
-      - Subsubnest'ed item 1
-      - Subsubnest'ed item 2 [Velit](https://m2mobi.com)
-      - Subsubnes'ted item 3 *(with single **space**)*
----
-## Combo
-1. Ordered 1
-2. Ordered 2
-  - Unordered 1
-  - Unordered 2
-    - Nested unorder'ed 1
-    - Nested unorder'ed 2
-1. Subnested o'rdered 1
-2. Subnested o'rdered 2
+![undefined](https://preview.redd.it/w3kr4m2fi3111.png?width=960&crop=smart&auto=webp&v=enabled&s=abeaab869e06ea4986a133555db6a551f1fe1082)
 
-# Images
----
-![My Apple](https://photos5.appleinsider.com/gallery/24863-32977-180219-Logo-l.jpg)
+*   as
+*   das
 
-![My Apple](//photos5.appleinsider.com/gallery/24863-32977-180219-Logo-l.jpg)
+![undefined](https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png)
 
-Inline image ![Apple logo](appleLogo) Apple logo ![Apple logo](appleLogoSmall)
-
----
-## Quotes
-> MarkDown is awesome
-> Seriously..
-
-## Links
-[This is a test link](https://m2mobi.com)
-Inline links are also possible, click [here](https://m2mobi.com).
-Do not worry about [possible markdown inside URLs](https://m2mobi.com?p_q=r_s&t_u), or [URLs with titles](https://m2mobi.com "Custom URL title").
-
-# Code
----
-
-```
-@Override
-On *multiple* lines
-```
-
-``` @Override ```
-
-Or maybe in line `@Override`

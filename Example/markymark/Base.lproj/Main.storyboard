@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-938" y="1103"/>
+            <point key="canvasLocation" x="-919" y="1101"/>
         </scene>
         <!--Storyboard-->
         <scene sceneID="Mjq-iL-Tco">
@@ -57,7 +57,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-cu-cUk" customClass="MarkDownTextView" customModule="markymark">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2h4-cu-cUk" customClass="MarkDownTextView" customModule="markymark">
                                 <rect key="frame" x="20" y="0.0" width="335" height="608.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -115,7 +115,7 @@ Lorem ipsum *dolor* sit amet, __consectetur__ adipiscing elit. Proin ***aliquet 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeQ-5T-l2v" customClass="MarkdownAttributedLabel" customModule="markymark">
-                                <rect key="frame" x="16" y="27" width="343" height="127.5"/>
+                                <rect key="frame" x="16" y="27" width="343" height="122"/>
                                 <string key="text">Simple lightweight Markdown label that supports *italic*, **bold**, ~~strikethrough~~ and [Links](https://www.somelink.com).
 
 Can also be used to create labels with custom text styling such as line-height</string>
@@ -148,8 +148,8 @@ Can also be used to create labels with custom text styling such as line-height</
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="56J-Ir-c6U" kind="relationship" relationship="viewControllers" id="wcx-LJ-WJb"/>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="pgZ-lX-2Qp"/>
+                        <segue destination="56J-Ir-c6U" kind="relationship" relationship="viewControllers" id="wcx-LJ-WJb"/>
                         <segue destination="uJz-O1-MGe" kind="relationship" relationship="viewControllers" id="O43-d6-vwf"/>
                         <segue destination="2fV-Im-Laa" kind="relationship" relationship="viewControllers" id="V5M-s7-bxg"/>
                     </connections>
@@ -161,7 +161,7 @@ Can also be used to create labels with custom text styling such as line-height</
     </scenes>
     <designables>
         <designable name="QeQ-5T-l2v">
-            <size key="intrinsicContentSize" width="645" height="79"/>
+            <size key="intrinsicContentSize" width="950" height="61"/>
         </designable>
     </designables>
     <resources>

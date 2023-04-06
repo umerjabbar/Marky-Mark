@@ -5,6 +5,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 /*
  * Image view that can retrieve images from a remote http location
@@ -37,19 +38,35 @@ open class RemoteImageView: UIImageView {
     // MARK: Private
 
     private func loadImageFromURL(_ url: URL) {
-
-        DispatchQueue.global(qos: .default).async {
-
-            let data = try? Data(contentsOf: url)
-
-            DispatchQueue.main.async(execute: {
-                if let data = data, let image = UIImage(data: data) {
-                    self.image = image
-                    self.addAspectConstraint()
-                    NotificationCenter.default.post(name: NSNotification.Name.init("RemoteImageSizeUpdated"), object: nil)
-                }
-            })
+        kf.setImage(with: url) { result in
+            switch result {
+            case .success(let imageResult):
+//                self.image = image
+                DispatchQueue.main.async(execute: {
+//                    if let data = data, let image = UIImage(data: data) {
+//                        self.image = image
+                        self.addAspectConstraint()
+                        NotificationCenter.default.post(name: NSNotification.Name.init("RemoteImageSizeUpdated"), object: nil)
+//                    }
+                })
+            case .failure(let error):
+                print(error.errorDescription ?? "error")
+                break
+            }
         }
+
+//        DispatchQueue.global(qos: .default).async {
+//
+//            let data = try? Data(contentsOf: url)
+//
+//            DispatchQueue.main.async(execute: {
+//                if let data = data, let image = UIImage(data: data) {
+//                    self.image = image
+//                    self.addAspectConstraint()
+//                    NotificationCenter.default.post(name: NSNotification.Name.init("RemoteImageSizeUpdated"), object: nil)
+//                }
+//            })
+//        }
     }
 
     private func addAspectConstraint() {

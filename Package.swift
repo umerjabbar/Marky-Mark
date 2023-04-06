@@ -12,11 +12,15 @@ let package = Package(
             name: "markymark",
             targets: ["markymark"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/onevcat/Kingfisher", from: "7.6.2"),
+    ],
     targets: [
         .target(
             name: "markymark",
-            dependencies: [],
+            dependencies: [
+                .product(name: "Kingfisher", package: "Kingfisher"),
+            ],
             path: "markymark"),
     ],
     swiftLanguageVersions: [.v5]
