@@ -25,7 +25,7 @@ public class DefaultURLOpener: URLOpener {
         guard let sharedApplication = sharedApplication else { return }
         
         if #available(iOS 10, *) {
-            _ = sharedApplication.open(url, options: [:], completionHandler: nil)
+            sharedApplication.open(url, options: [:], completionHandler: nil)
         } else {
             _ = sharedApplication.openURL(url)
         }
