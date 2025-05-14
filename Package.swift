@@ -1,11 +1,11 @@
-// swift-tools-version:5.1
+// swift-tools-version: 5.6
 
 import PackageDescription
 
 let package = Package(
     name: "Marky-Mark",
     platforms: [
-        .iOS(.v12),
+        .iOS(.v14),
     ],
     products: [
         .library(
